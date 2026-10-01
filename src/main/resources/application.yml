@@ -1,0 +1,17 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+cesop:
+  # Optional: official schemas from BZSt ("Amtlicher Datensatz CESOP").
+  # When set, every uploaded file is also validated against them.
+  # List the entry schema(s), e.g. dip.xsd (it imports cesop_PaymentData.xsd) -
+  # or list both. Use file: or classpath: URLs.
+  xsd-files: []
+  #  - file:/opt/cesop/xsd/dip.xsd
+  #  - file:/opt/cesop/xsd/cesop_PaymentData.xsd
+  xsd-base-path: Amtlicher_Datensatz_CESOP   # used in generated xsi:schemaLocation
+  default-environment: TEST                  # TEST | PROD (as agreed with BZSt)
+  default-transmitting-country: DE

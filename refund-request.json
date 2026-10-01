@@ -1,0 +1,7 @@
+{
+  "action": "CORRECT_PAYEE",
+  "targetDocRefId": "660f1ecb-1764-40b8-8153-72793e2af465",
+  "transactionPatches": [
+    { "transactionIdentifier": "13b024c3-f93c-4e47-8fc4-c932c577c03f", "refund": true }
+  ]
+}
